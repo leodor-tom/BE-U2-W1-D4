@@ -9,7 +9,7 @@ public interface IUserDAO {
 
     public User findByID(String username);
 
-    public void findByIdAndUpdate(String username);
+    public void findByIdAndUpdate(String username, User user);
 
     public void findByIdAndDelete(String username);
 
@@ -17,7 +17,5 @@ public interface IUserDAO {
 
     public long count();
 
-    public void filterByFullName(String fullName);
 
-    public User findByEmail(String email);
 }
